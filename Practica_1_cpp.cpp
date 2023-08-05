@@ -35,7 +35,7 @@ int main()
 		
 		while(j<=5)        //// codigo tiene que ejecutarse 5 veces
 		{
-			for(int i=0;i<n;i++)	{		int num = 0+ rand()%(50-0);		arr[i]=num;	}   // para crear una lista de randoms
+			for(int i=0;i<n;i++)	{		int num = 0+ rand()%(50000-0);		arr[i]=num;	}   // para crear una lista de randoms
 			//for(int i=0;i<n;i++)		cout<<arr[i]<<" ";	cout<<endl;  // printeamos la lista de randoms creada
 			j+=1;
 			//cout<< n << endl;
@@ -60,7 +60,7 @@ int main()
 			//cout<< n << endl;
 			//for(int i=0;i<n;i++)		cout<<arr[i]<<" ";	cout<<endl; // printeamos la lista de randoms ordenada	
 			
-			for(int i=0;i<n;i++)	{		int num = 1+ rand()%(50-1);		arr[i]=num;	} 
+			for(int i=0;i<n;i++)	{		int num = 1+ rand()%(50000-1);		arr[i]=num;	} 
 			//for(int i=0;i<n;i++)		cout<<arr[i]<<" ";	cout<<endl; // printeamos la lista de randoms nueva
 			double t0_0=clock();
 			// MergeSort
@@ -79,7 +79,7 @@ int main()
 			j_2+=1;
 			//cout<< n << endl;
 			
-			for(int i=0;i<n;i++)	{		int num = 1+ rand()%(50-1);		arr[i]=num;	} 
+			for(int i=0;i<n;i++)	{		int num = 1+ rand()%(50000-1);		arr[i]=num;	} 
 			unsigned t0_1=clock();
 			// Selection Sort
 			selectionSort(arr,n);
@@ -95,7 +95,7 @@ int main()
 			j_3+=1;
 			//cout<< n << endl;
 				
-			for(int i=0;i<n;i++)	{		int num = 1+ rand()%(50-1);		arr[i]=num;	} 
+			for(int i=0;i<n;i++)	{		int num = 1+ rand()%(50000-1);		arr[i]=num;	} 
 			unsigned t0_2=clock();
 			// Counting Srot
 			countSort(arr,n);

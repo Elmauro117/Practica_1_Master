@@ -8,15 +8,10 @@ import (
 
 // funcion de ejecucion
 func main() {
-	Lista_listas := []int{100, 1000} //, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 20000, 30000, 40000, 50000}
+	Lista_listas := []int{100, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 20000, 30000, 40000, 50000}
 	var tiempo_bubble_sort, tiempo_Counting_sort time.Duration
 
 	var s_b []string
-	//var s_m []int
-	//var s_s []int
-	//var s_c []int
-
-	//t := time.Now().UTC()
 
 	for i := 0; i < len(Lista_listas); i++ {
 		Lista_de_lista := make([]int, Lista_listas[i]) /// creo una lista de ceros con tamaño de cada valor de la lista_listas {0,0,0,0,0}
@@ -27,7 +22,7 @@ func main() {
 			contador_1++
 
 			for i_1 := 0; i_1 < len(Lista_de_lista); i_1++ {
-				Lista_de_lista[i_1] = rand.Intn(10) /// mete valores rand a la lista de ceros
+				Lista_de_lista[i_1] = rand.Intn(50000) /// mete valores rand a la lista de ceros
 			}
 
 			//fmt.Println(Lista_de_lista)
@@ -45,7 +40,7 @@ func main() {
 			contador_3++
 
 			for i_1 := 0; i_1 < len(Lista_de_lista); i_1++ {
-				Lista_de_lista[i_1] = rand.Intn(10) //mete valores rand a la lista de ceros
+				Lista_de_lista[i_1] = rand.Intn(50000) //mete valores rand a la lista de ceros
 			}
 
 			//fmt.Println(Lista_de_lista)
@@ -65,7 +60,7 @@ func main() {
 			contador_2++
 
 			for i_1 := 0; i_1 < len(Lista_de_lista); i_1++ {
-				Lista_de_lista[i_1] = rand.Intn(10) //mete valores rand a la lista de ceros
+				Lista_de_lista[i_1] = rand.Intn(50000) //mete valores rand a la lista de ceros
 			}
 
 			//fmt.Println(Lista_de_lista)
@@ -84,7 +79,7 @@ func main() {
 			contador_4++
 
 			for i_1 := 0; i_1 < len(Lista_de_lista); i_1++ {
-				Lista_de_lista[i_1] = rand.Intn(10) //mete valores rand a la lista de ceros
+				Lista_de_lista[i_1] = rand.Intn(50) //mete valores rand a la lista de ceros
 			}
 
 			//fmt.Println(Lista_de_lista)
@@ -180,13 +175,13 @@ func Counting_sort(Lista []int) time.Duration {
 	t_start := time.Now() //Inicio de reloj
 	// Algoritmo
 	size := len(ListaC)
-	N := 10
+	N := 50000
 	output := make([]int, size) // [0]*size
 	count := make([]int, N)     //[0]*N
 	for i := 0; i < size; i++ {
 		count[ListaC[i]] += 1
 	}
-	for i := 1; i < 10; i++ {
+	for i := 1; i < 50000; i++ {
 		count[i] += count[i-1]
 	}
 	//	i := size - 1
