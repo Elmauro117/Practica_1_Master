@@ -79,7 +79,7 @@ func main() {
 			contador_4++
 
 			for i_1 := 0; i_1 < len(Lista_de_lista); i_1++ {
-				Lista_de_lista[i_1] = rand.Intn(50) //mete valores rand a la lista de ceros
+				Lista_de_lista[i_1] = rand.Intn(50000) //mete valores rand a la lista de ceros
 			}
 
 			//fmt.Println(Lista_de_lista)
